@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customviewdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="12dp"
+        android:text="Standard Android Font" />
+    
+     <com.example.customviewdemo.CustomTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="12dp"
+        customviewdemo:MyFont="helveticaneue-webfont.ttf"
+        android:text="Custom Android Font" />
+     
+     <com.example.customviewdemo.CustomTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="12dp"
+        customviewdemo:MyFont="pipedream.TTF"
+        android:text="Custom Android Font" />
+
+     <EditText
+         android:id="@+id/editText3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="32sp"
+         android:padding="12dp"
+         android:ems="10" />
+     
+     <com.example.customviewdemo.CustomEdittext
+         android:id="@+id/editText1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="32sp"
+         android:padding="12dp"
+         customviewdemo:MyFont="helveticaneue-webfont.ttf"
+         android:ems="10" />
+         
+  	<com.example.customviewdemo.CustomEdittext
+         android:id="@+id/editText2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="32sp"
+         android:padding="12dp"
+         customviewdemo:MyFont="pipedream.TTF"
+         android:ems="10" />
+
+      
+
+</LinearLayout>

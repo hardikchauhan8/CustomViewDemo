@@ -42,6 +42,8 @@ public class CustomEdittext extends EditText{
 			 if (fontName!=null) {
 				 Typeface myTypeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/"+fontName);
 				 setTypeface(myTypeface);
+				 
+				 //FontCache.getFont(getContext(), "fonts/"+fontName);
 			 }
 			 a.recycle();
 		}
